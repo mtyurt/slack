@@ -24,8 +24,10 @@ type SearchParameters struct {
 }
 
 type CtxChannel struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID             string `json:"id"`
+	Name           string `json:"name"`
+	IsPrivateGroup bool   `json:"is_mpim"`
+	IsPrivate      bool   `json:"is_private"`
 }
 
 type CtxMessage struct {
